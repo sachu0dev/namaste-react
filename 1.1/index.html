@@ -32,35 +32,7 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
-    <script>
-      const root = ReactDOM.createRoot(document.getElementById("root"));
-      const heading1 = React.createElement(
-        "h1",
-        {
-          key: "heading1",
-          id: "title",
-        },
-        "heading 1"
-      );
-      const heading2 = React.createElement(
-        "h2",
-        {
-          key: "heading2",
-          id: "title",
-        },
-        "heading 2"
-      );
-      const container = React.createElement(
-        "div",
-        {
-          id: "container",
-        },
-        [heading1, heading2]
-      );
-
-      root.render(container);
-      // root render overwrites or replace the previous insides
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
 <!-- what is def in async in defer -->
