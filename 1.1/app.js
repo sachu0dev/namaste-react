@@ -24,4 +24,3 @@ const container = React.createElement(
 );
 
 root.render(container);
-// root render overwrites or replace the previous insides
