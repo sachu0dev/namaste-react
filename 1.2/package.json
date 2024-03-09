@@ -1,0 +1,17 @@
+{
+  "name": "1.2",
+  "version": "1.0.0",
+  "description": "this is a test description",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "sachu"
+  ],
+  "author": "sachu",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
