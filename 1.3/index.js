@@ -17,10 +17,15 @@ const container = React.createElement(
   },
   [heading1, heading2]
 );
-const HeaderComponet = ()=>{
-  return <div><h1>this is a h1 tag</h1><h2>this is h2</h2></div>
+function HeaderComponet(){
+  return <div>
+    {heading1}
+    {heading2}
+    <h1>this is a h1 tag</h1>
+    <h2>this is h2</h2>
+    </div>
 }
-root.render(container);
+root.render(<HeaderComponet/>);
 // pollyfil it genartes the new code to old code that broweser may understand for: eg : array.map() to myMap() this is done by bable
 // browser list conatains  list of broweser and is responsovle for telling bable for what it has to convert 
 // babel plugin transform remove console to remove console logs

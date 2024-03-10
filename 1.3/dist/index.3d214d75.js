@@ -2976,32 +2976,38 @@ const container = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", 
     heading1,
     heading2
 ]);
-const HeaderComponet = ()=>{
+function HeaderComponet() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
+            heading1,
+            heading2,
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "this is a h1 tag"
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 13,
-                columnNumber: 15
-            }, undefined),
+                lineNumber: 16,
+                columnNumber: 5
+            }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: "this is h2"
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 13,
-                columnNumber: 40
-            }, undefined)
+                lineNumber: 17,
+                columnNumber: 5
+            }, this)
         ]
     }, void 0, true, {
         fileName: "index.js",
         lineNumber: 13,
         columnNumber: 10
-    }, undefined);
-};
+    }, this);
+}
 _c = HeaderComponet;
-root.render(container); // pollyfil it genartes the new code to old code that broweser may understand for: eg : array.map() to myMap() this is done by bable
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponet, {}, void 0, false, {
+    fileName: "index.js",
+    lineNumber: 20,
+    columnNumber: 13
+}, undefined)); // pollyfil it genartes the new code to old code that broweser may understand for: eg : array.map() to myMap() this is done by bable
  // browser list conatains  list of broweser and is responsovle for telling bable for what it has to convert 
  // babel plugin transform remove console to remove console logs
 var _c;
