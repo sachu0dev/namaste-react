@@ -2976,9 +2976,36 @@ const container = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", 
     heading1,
     heading2
 ]);
+const HeaderComponet = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "this is a h1 tag"
+            }, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 13,
+                columnNumber: 15
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "this is h2"
+            }, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 13,
+                columnNumber: 40
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "index.js",
+        lineNumber: 13,
+        columnNumber: 10
+    }, undefined);
+};
+_c = HeaderComponet;
 root.render(container); // pollyfil it genartes the new code to old code that broweser may understand for: eg : array.map() to myMap() this is done by bable
  // browser list conatains  list of broweser and is responsovle for telling bable for what it has to convert 
  // babel plugin transform remove console to remove console logs
+var _c;
+$RefreshReg$(_c, "HeaderComponet");
 
   $parcel$ReactRefreshHelpers$e4e3.postlude(module);
 } finally {
