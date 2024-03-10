@@ -1,13 +1,13 @@
 6836
-58/home/sachudev/code/code-namaste-react/1.3/dist/index.html1710054416159452000 0
-65/home/sachudev/code/code-namaste-react/1.3/dist/index.3d214d75.js1710054120614441276 0
-70/home/sachudev/code/code-namaste-react/1.3/dist/index.9e4c6fd2.css.map1710054109885363606 0
-66/home/sachudev/code/code-namaste-react/1.3/dist/index.9e4c6fd2.css1710054109884363599 0
+65/home/sachudev/code/code-namaste-react/1.3/dist/index.3d214d75.js1710057295988169004 0
+58/home/sachudev/code/code-namaste-react/1.3/dist/index.html1710057295946168703 0
+70/home/sachudev/code/code-namaste-react/1.3/dist/index.9e4c6fd2.css.map1710057295942168674 0
+66/home/sachudev/code/code-namaste-react/1.3/dist/index.9e4c6fd2.css1710057295941168667 0
 70/home/sachudev/code/code-namaste-react/1.3/dist/index.af85d8bb.css.map1710053780408978475 0
 65/home/sachudev/code/code-namaste-react/1.3/dist/index.7968ffdc.js1710053780407978468 0
 65/home/sachudev/code/code-namaste-react/1.3/dist/index.775ddfe3.js1710053780407978468 0
 66/home/sachudev/code/code-namaste-react/1.3/dist/index.af85d8bb.css1710053780407978468 0
-47/home/sachudev/code/code-namaste-react/1.3/dist1710054416159452000 1
+47/home/sachudev/code/code-namaste-react/1.3/dist1710057295997169069 1
 51/home/sachudev/code/code-namaste-react/1.3/.babelrc1710054795272009011 0
 60/home/sachudev/code/code-namaste-react/1.3/package-lock.json1710053759055823895 0
 87/home/sachudev/code/code-namaste-react/1.3/node_modules/@ampproject/remapping/README.md1710053759001823504 0
@@ -790,7 +790,7 @@
 83/home/sachudev/code/code-namaste-react/1.3/node_modules/svgo/plugins/removeTitle.js1709963291623491736 0
 90/home/sachudev/code/code-namaste-react/1.3/node_modules/svgo/plugins/removeStyleElement.js1709963291622491715 0
 91/home/sachudev/code/code-namaste-react/1.3/node_modules/svgo/plugins/removeScriptElement.js1709963291622491715 0
-69/home/sachudev/code/code-namaste-react/1.3/dist/index.3d214d75.js.map1710054120623441341 0
+69/home/sachudev/code/code-namaste-react/1.3/dist/index.3d214d75.js.map1710057295994169047 0
 102/home/sachudev/code/code-namaste-react/1.3/node_modules/svgo/plugins/removeNonInheritableGroupAttrs.js1709963291620491673 0
 89/home/sachudev/code/code-namaste-react/1.3/node_modules/svgo/plugins/removeHiddenElems.js1709963291619491652 0
 93/home/sachudev/code/code-namaste-react/1.3/node_modules/svgo/plugins/removeEmptyContainers.js1709963291618491631 0
@@ -2796,7 +2796,7 @@
 79/home/sachudev/code/code-namaste-react/1.3/node_modules/nullthrows/package.json1709963291482488770 0
 129/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/pseudo/has.js1709963291616491589 0
 90/home/sachudev/code/code-namaste-react/1.3/node_modules/htmlnano/docs/docusaurus.config.js1709963291577490768 0
-51/home/sachudev/code/code-namaste-react/1.3/index.js1710055976051103182 0
+51/home/sachudev/code/code-namaste-react/1.3/index.js1710065941993540992 0
 108/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-svgo/node_modules/svgo/lib/svgo.js1709963291621491694 0
 66/home/sachudev/code/code-namaste-react/1.3/node_modules/parcel/lib1709963291501489169 1
 125/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/plugins/convertColors.js1709963291567490558 0
@@ -5001,7 +5001,7 @@
 91/home/sachudev/code/code-namaste-react/1.3/node_modules/domelementtype/lib/esm/package.json1709963291517489506 0
 122/home/sachudev/code/code-namaste-react/1.3/node_modules/@babel/helper-compilation-targets/node_modules/lru-cache/README.md1710053758996823468 0
 88/home/sachudev/code/code-namaste-react/1.3/node_modules/css-tree/cjs/lexer/structure.cjs1709963291635491988 0
-53/home/sachudev/code/code-namaste-react/1.3/index.html1710054416138451858 0
+53/home/sachudev/code/code-namaste-react/1.3/index.html1710057285686095115 0
 80/home/sachudev/code/code-namaste-react/1.3/node_modules/semver/internal/debug.js1709963291530489779 0
 101/home/sachudev/code/code-namaste-react/1.3/node_modules/caniuse-lite/data/features/input-inputmode.js1709963291713493629 0
 109/home/sachudev/code/code-namaste-react/1.3/node_modules/@babel/helper-compilation-targets/node_modules/semver1710053759000823497 1
