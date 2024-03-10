@@ -1149,7 +1149,7 @@
 98/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/core/test/PublicDependency.test.js1709963291659492493 0
 63/home/sachudev/code/code-namaste-react/1.3/node_modules/is-json1709963291501489169 1
 88/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/core/test/Parcel.test.js1709963291651492325 0
-66/home/sachudev/code/code-namaste-react/1.3/dist/index.9e4c6fd2.css1709977903339647478 0
+66/home/sachudev/code/code-namaste-react/1.3/dist/index.9e4c6fd2.css1710052930946367048 0
 84/home/sachudev/code/code-namaste-react/1.3/node_modules/@swc/helpers/cjs/_update.cjs1709963291606491378 0
 103/home/sachudev/code/code-namaste-react/1.3/node_modules/caniuse-lite/data/features/rtcpeerconnection.js1709963291748494365 0
 87/home/sachudev/code/code-namaste-react/1.3/node_modules/caniuse-lite/data/regions/WS.js1709963291769494807 0
@@ -1306,7 +1306,7 @@
 127/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-svgo/node_modules/css-tree/lib/syntax/function/var.js1709963291655492409 0
 131/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/source-map/parcel_sourcemap_node/artifacts/index.linux-x64-gnu.node1709963291654492388 0
 112/home/sachudev/code/code-namaste-react/1.3/node_modules/dom-serializer/node_modules/entities/lib/decode.d.ts.map1709963291540489990 0
-47/home/sachudev/code/code-namaste-react/1.3/dist1709977903382647667 1
+47/home/sachudev/code/code-namaste-react/1.3/dist1710052930996367430 1
 85/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/types/lib/unsafe.d.ts1709963291533489842 0
 89/home/sachudev/code/code-namaste-react/1.3/node_modules/lmdb/dependencies/lz4/lib/lz4hc.h1709963291659492493 0
 96/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/source-map/parcel_sourcemap_node1709963291664492598 1
@@ -1989,7 +1989,7 @@
 102/home/sachudev/code/code-namaste-react/1.3/node_modules/caniuse-lite/data/features/css-font-stretch.js1709963291654492388 0
 137/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-htmlnano/node_modules/csso/lib/restructure/8-restructRuleset.js1709963291531489800 0
 87/home/sachudev/code/code-namaste-react/1.3/node_modules/caniuse-lite/data/regions/PK.js1709963291744494281 0
-69/home/sachudev/code/code-namaste-react/1.3/dist/index.3d214d75.js.map1709977903380647658 0
+69/home/sachudev/code/code-namaste-react/1.3/dist/index.3d214d75.js.map1710052930993367407 0
 102/home/sachudev/code/code-namaste-react/1.3/node_modules/svgo/plugins/removeNonInheritableGroupAttrs.js1709963291620491673 0
 115/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-svgo/node_modules/svgo/plugins/plugins.js1709963291595491147 0
 98/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/utils/test/input/config/empty.json1709963291636492009 0
@@ -2039,9 +2039,9 @@
 104/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/runtime-js/lib/helpers/get-worker-url.js1709963291564490495 0
 129/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/pseudo/has.js1709963291616491589 0
 79/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/core/index.d.ts1709963291697493293 0
-58/home/sachudev/code/code-namaste-react/1.3/dist/index.html1709977903333647452 0
+58/home/sachudev/code/code-namaste-react/1.3/dist/index.html1710052930945367040 0
 90/home/sachudev/code/code-namaste-react/1.3/node_modules/htmlnano/docs/docusaurus.config.js1709963291577490768 0
-51/home/sachudev/code/code-namaste-react/1.3/index.js1710052405209731245 0
+51/home/sachudev/code/code-namaste-react/1.3/index.js1710052733558964305 0
 108/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-svgo/node_modules/svgo/lib/svgo.js1709963291621491694 0
 66/home/sachudev/code/code-namaste-react/1.3/node_modules/parcel/lib1709963291501489169 1
 125/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/plugins/convertColors.js1709963291567490558 0
@@ -2376,7 +2376,7 @@
 75/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/packager-js1709963291568490579 1
 108/home/sachudev/code/code-namaste-react/1.3/node_modules/@swc/helpers/_/_tagged_template_literal/package.json1709963291710493566 0
 104/home/sachudev/code/code-namaste-react/1.3/node_modules/@swc/helpers/esm/_is_native_reflect_construct.js1709963291634491967 0
-70/home/sachudev/code/code-namaste-react/1.3/dist/index.9e4c6fd2.css.map1709977903340647483 0
+70/home/sachudev/code/code-namaste-react/1.3/dist/index.9e4c6fd2.css.map1710052930946367048 0
 135/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/definition-syntax/index.js1709963291619491652 0
 125/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/create.js1709963291582490873 0
 98/home/sachudev/code/code-namaste-react/1.3/node_modules/caniuse-lite/data/features/css-rrggbbaa.js1709963291666492640 0
@@ -2447,7 +2447,7 @@
 95/home/sachudev/code/code-namaste-react/1.3/node_modules/lmdb/node_modules/node-addon-api/napi.h1709963291562490453 0
 83/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/transformer-svg/src1709963291527489716 1
 94/home/sachudev/code/code-namaste-react/1.3/node_modules/@swc/helpers/esm/_non_iterable_rest.js1709963291636492009 0
-65/home/sachudev/code/code-namaste-react/1.3/dist/index.3d214d75.js1709977903374647632 0
+65/home/sachudev/code/code-namaste-react/1.3/dist/index.3d214d75.js1710052930988367369 0
 96/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-svgo/node_modules/svgo1709963291623491736 1
 90/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/runtime-service-worker/lib1709963291487488875 1
 81/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-css/src1709963291497489085 1
@@ -2813,7 +2813,7 @@
 106/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/node-resolver-core/lib/builtins.browser.js1709963291496489064 0
 104/home/sachudev/code/code-namaste-react/1.3/node_modules/caniuse-lite/data/features/css-cascade-layers.js1709963291640492093 0
 130/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/optimizer-htmlnano/node_modules/svgo/plugins/removeStyleElement.js1709963291605491357 0
-55/home/sachudev/code/code-namaste-react/1.3/package.json1710052197756283595 0
+55/home/sachudev/code/code-namaste-react/1.3/package.json1710053029273119643 0
 77/home/sachudev/code/code-namaste-react/1.3/node_modules/color-convert/LICENSE1709963291509489338 0
 108/home/sachudev/code/code-namaste-react/1.3/node_modules/@parcel/core/test/fixtures/library-custom-scopehoist1709963291693493208 1
 102/home/sachudev/code/code-namaste-react/1.3/node_modules/css-tree/cjs/syntax/node/AttributeSelector.cjs1709963291543490053 0
@@ -4456,7 +4456,7 @@
 79/home/sachudev/code/code-namaste-react/1.3/node_modules/semver/classes/index.js1709963291550490200 0
 79/home/sachudev/code/code-namaste-react/1.3/node_modules/semver/classes/range.js1709963291573490684 0
 88/home/sachudev/code/code-namaste-react/1.3/node_modules/css-tree/cjs/lexer/structure.cjs1709963291635491988 0
-53/home/sachudev/code/code-namaste-react/1.3/index.html1709977292321149537 0
+53/home/sachudev/code/code-namaste-react/1.3/index.html1710052812512494183 0
 80/home/sachudev/code/code-namaste-react/1.3/node_modules/semver/internal/debug.js1709963291530489779 0
 95/home/sachudev/code/code-namaste-react/1.3/node_modules/css-tree/cjs/syntax/node/Percentage.cjs1709963291623491736 0
 88/home/sachudev/code/code-namaste-react/1.3/node_modules/semver/internal/parse-options.js1709963291568490579 0
