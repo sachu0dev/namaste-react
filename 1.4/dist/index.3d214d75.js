@@ -2977,7 +2977,9 @@ const container = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", 
     heading2
 ]);
 function Title() {
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+        href: "/",
+        className: "logo",
         children: "butter & Nan"
     }, void 0, false, {
         fileName: "index.js",
@@ -2986,39 +2988,146 @@ function Title() {
     }, this);
 }
 _c = Title;
-function HeaderComponet() {
+const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header ",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "index.js",
                 lineNumber: 32,
                 columnNumber: 5
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "this is h2"
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "index.js",
+                            lineNumber: 35,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "About"
+                        }, void 0, false, {
+                            fileName: "index.js",
+                            lineNumber: 36,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Contact"
+                        }, void 0, false, {
+                            fileName: "index.js",
+                            lineNumber: 37,
+                            columnNumber: 9
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Cart"
+                        }, void 0, false, {
+                            fileName: "index.js",
+                            lineNumber: 38,
+                            columnNumber: 9
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "index.js",
+                    lineNumber: 34,
+                    columnNumber: 7
+                }, undefined)
             }, void 0, false, {
                 fileName: "index.js",
                 lineNumber: 33,
                 columnNumber: 5
-            }, this)
+            }, undefined)
         ]
     }, void 0, true, {
         fileName: "index.js",
         lineNumber: 31,
         columnNumber: 10
-    }, this);
-}
-_c1 = HeaderComponet;
-root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponet, {}, void 0, false, {
+    }, undefined);
+};
+_c1 = Header;
+const RestarunrantCard = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_628,h_704/TopPicks/29826715A.png"
+            }, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 47,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "Burger"
+            }, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 48,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "index.js",
+        lineNumber: 46,
+        columnNumber: 5
+    }, undefined);
+};
+_c2 = RestarunrantCard;
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestarunrantCard, {}, void 0, false, {
+        fileName: "index.js",
+        lineNumber: 54,
+        columnNumber: 5
+    }, undefined);
+};
+_c3 = Body;
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+        children: "footer"
+    }, void 0, false, {
+        fileName: "index.js",
+        lineNumber: 59,
+        columnNumber: 5
+    }, undefined);
+};
+_c4 = Footer;
+const AppLayout = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 65,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 66,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 67,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true);
+};
+_c5 = AppLayout;
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "index.js",
-    lineNumber: 36,
+    lineNumber: 94,
     columnNumber: 13
 }, undefined)); // pollyfil it genartes the new code to old code that broweser may understand for: eg : array.map() to myMap() this is done by bable
  // browser list conatains  list of broweser and is responsovle for telling bable for what it has to convert 
  // babel plugin transform remove console to remove console logs
-var _c, _c1;
+var _c, _c1, _c2, _c3, _c4, _c5;
 $RefreshReg$(_c, "Title");
-$RefreshReg$(_c1, "HeaderComponet");
+$RefreshReg$(_c1, "Header");
+$RefreshReg$(_c2, "RestarunrantCard");
+$RefreshReg$(_c3, "Body");
+$RefreshReg$(_c4, "Footer");
+$RefreshReg$(_c5, "AppLayout");
 
   $parcel$ReactRefreshHelpers$e4e3.postlude(module);
 } finally {
