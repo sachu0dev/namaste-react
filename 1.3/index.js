@@ -7,7 +7,7 @@ const heading1 = React.createElement(
     key: "h1",
     id: "title",
   },
-  "heading 1"
+  "heading 1" 
 );
 const heading2 = (<h2 id="title" key="h2">Namaste test</h2>);
 const container = React.createElement(
