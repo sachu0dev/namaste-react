@@ -17,12 +17,19 @@ const container = React.createElement(
   },
   [heading1, heading2]
 );
+function Title(){
+  return <div>
+    <p>this is a h1 tag</p>
+    <p>this is h2</p>
+    </div>
+}
 function HeaderComponet(){
   return <div>
     {heading1}
     {heading2}
     <h1>this is a h1 tag</h1>
     <h2>this is h2</h2>
+    <Title/>
     </div>
 }
 root.render(<HeaderComponet/>);

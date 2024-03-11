@@ -2976,23 +2976,21 @@ const container = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", 
     heading1,
     heading2
 ]);
-function HeaderComponet() {
+function Title() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
-            heading1,
-            heading2,
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "this is a h1 tag"
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 16,
+                lineNumber: 14,
                 columnNumber: 5
             }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: "this is h2"
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 17,
+                lineNumber: 15,
                 columnNumber: 5
             }, this)
         ]
@@ -3002,16 +3000,49 @@ function HeaderComponet() {
         columnNumber: 10
     }, this);
 }
-_c = HeaderComponet;
+_c = Title;
+function HeaderComponet() {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            heading1,
+            heading2,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "this is a h1 tag"
+            }, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 22,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "this is h2"
+            }, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 23,
+                columnNumber: 5
+            }, this),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "index.js",
+                lineNumber: 24,
+                columnNumber: 5
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "index.js",
+        lineNumber: 19,
+        columnNumber: 10
+    }, this);
+}
+_c1 = HeaderComponet;
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponet, {}, void 0, false, {
     fileName: "index.js",
-    lineNumber: 20,
+    lineNumber: 27,
     columnNumber: 13
 }, undefined)); // pollyfil it genartes the new code to old code that broweser may understand for: eg : array.map() to myMap() this is done by bable
  // browser list conatains  list of broweser and is responsovle for telling bable for what it has to convert 
  // babel plugin transform remove console to remove console logs
-var _c;
-$RefreshReg$(_c, "HeaderComponet");
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "HeaderComponet");
 
   $parcel$ReactRefreshHelpers$e4e3.postlude(module);
 } finally {
