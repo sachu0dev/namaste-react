@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Header, Title } from "./components/Header";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const restarunrantList = [
@@ -1720,29 +1721,6 @@ const restarunrantList = [
   }
 ];
 
-function Title() {
-  return (<a href="/" className="logo">
-    butter & Nan
-    {
-      // this is comment
-      // jsx is not mandatory in react
-      // es6 is not mandatory 
-    }
-  </a>);
-}
-const Header = () => {
-  return <div className="header ">
-    <Title />
-    <div className="nav-items">
-      <ul>
-        <li><i class="fa-solid fa-house"></i> Home</li>
-        <li><i class="fa-solid fa-gift"></i> Offers</li>
-        <li><i class="fa-solid fa-question"></i> Help</li>
-        <li><i class="fa-solid fa-cart-shopping"></i> Cart</li>
-      </ul>
-    </div>
-  </div>
-}
 
 const config = [
   {
