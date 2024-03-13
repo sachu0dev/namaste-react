@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Header, Title } from "./components/Header";
+import { Header, Title } from "./components/Header.jsx";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const restarunrantList = [
