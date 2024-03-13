@@ -4381,7 +4381,7 @@ function Title() {
         children: "butter & Nan"
     }, void 0, false, {
         fileName: "index.js",
-        lineNumber: 1747,
+        lineNumber: 1724,
         columnNumber: 11
     }, this);
 }
@@ -4392,7 +4392,7 @@ const Header = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 1758,
+                lineNumber: 1735,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -4400,48 +4400,75 @@ const Header = ()=>{
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Home"
-                        }, void 0, false, {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                    class: "fa-solid fa-house"
+                                }, void 0, false, {
+                                    fileName: "index.js",
+                                    lineNumber: 1738,
+                                    columnNumber: 13
+                                }, undefined),
+                                " Home"
+                            ]
+                        }, void 0, true, {
                             fileName: "index.js",
-                            lineNumber: 1761,
+                            lineNumber: 1738,
                             columnNumber: 9
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Offers"
-                        }, void 0, false, {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                    class: "fa-solid fa-gift"
+                                }, void 0, false, {
+                                    fileName: "index.js",
+                                    lineNumber: 1739,
+                                    columnNumber: 13
+                                }, undefined),
+                                " Offers"
+                            ]
+                        }, void 0, true, {
                             fileName: "index.js",
-                            lineNumber: 1762,
+                            lineNumber: 1739,
                             columnNumber: 9
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Help"
-                        }, void 0, false, {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                    class: "fa-solid fa-question"
+                                }, void 0, false, {
+                                    fileName: "index.js",
+                                    lineNumber: 1740,
+                                    columnNumber: 13
+                                }, undefined),
+                                " Help"
+                            ]
+                        }, void 0, true, {
                             fileName: "index.js",
-                            lineNumber: 1763,
+                            lineNumber: 1740,
                             columnNumber: 9
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: "Cart"
                         }, void 0, false, {
                             fileName: "index.js",
-                            lineNumber: 1764,
+                            lineNumber: 1741,
                             columnNumber: 9
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "index.js",
-                    lineNumber: 1760,
+                    lineNumber: 1737,
                     columnNumber: 7
                 }, undefined)
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 1759,
+                lineNumber: 1736,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "index.js",
-        lineNumber: 1757,
+        lineNumber: 1734,
         columnNumber: 10
     }, undefined);
 };
@@ -4491,14 +4518,14 @@ const RestarunrantCard = ({ name, cuisines, cloudinaryImageId, avgRating, locali
                 src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 1804,
+                lineNumber: 1781,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
                 children: name
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 1805,
+                lineNumber: 1782,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -4508,14 +4535,14 @@ const RestarunrantCard = ({ name, cuisines, cloudinaryImageId, avgRating, locali
                 ]
             }, void 0, true, {
                 fileName: "index.js",
-                lineNumber: 1806,
+                lineNumber: 1783,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                 children: locality
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 1807,
+                lineNumber: 1784,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -4523,13 +4550,13 @@ const RestarunrantCard = ({ name, cuisines, cloudinaryImageId, avgRating, locali
                 children: cuisines.join(",")
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 1808,
+                lineNumber: 1785,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "index.js",
-        lineNumber: 1803,
+        lineNumber: 1780,
         columnNumber: 5
     }, undefined);
 };
@@ -4542,13 +4569,13 @@ const Body = ()=>{
                 ...restarunrant.info
             }, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 1817,
+                lineNumber: 1794,
                 columnNumber: 18
             }, undefined);
         })
     }, void 0, false, {
         fileName: "index.js",
-        lineNumber: 1814,
+        lineNumber: 1791,
         columnNumber: 5
     }, undefined);
 };
@@ -4558,7 +4585,7 @@ const Footer = ()=>{
         children: "footer"
     }, void 0, false, {
         fileName: "index.js",
-        lineNumber: 1825,
+        lineNumber: 1802,
         columnNumber: 5
     }, undefined);
 };
@@ -4568,18 +4595,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 1831,
-                columnNumber: 5
+                lineNumber: 1808,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 1832,
-                columnNumber: 5
+                lineNumber: 1809,
+                columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 1833,
-                columnNumber: 5
+                lineNumber: 1810,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
@@ -4587,7 +4614,7 @@ const AppLayout = ()=>{
 _c5 = AppLayout;
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "index.js",
-    lineNumber: 1860,
+    lineNumber: 1837,
     columnNumber: 13
 }, undefined)); // pollyfil it genartes the new code to old code that broweser may understand for: eg : array.map() to myMap() this is done by bable
  // browser list conatains  list of broweser and is responsovle for telling bable for what it has to convert 

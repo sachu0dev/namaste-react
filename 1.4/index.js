@@ -31,20 +31,20 @@ const restarunrantList = [
         "opened": true
       },
       "badges": {
-        
+
       },
       "isOpen": true,
       "type": "F",
       "badgesV2": {
         "entityBadges": {
           "imageBased": {
-            
+
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -58,23 +58,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/pizza-hut-bmc-chowk-gt-road-jalandhar-324765",
@@ -114,20 +114,20 @@ const restarunrantList = [
         "opened": true
       },
       "badges": {
-        
+
       },
       "isOpen": true,
       "type": "F",
       "badgesV2": {
         "entityBadges": {
           "imageBased": {
-            
+
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -140,23 +140,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/ubq-by-barbeque-nation-rainbow-road-model-town-jalandhar-126276",
@@ -217,10 +217,10 @@ const restarunrantList = [
             ]
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -233,23 +233,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/aggarwal-vaishno-dhaba-model-town-jalandhar-283662",
@@ -312,10 +312,10 @@ const restarunrantList = [
             ]
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -328,23 +328,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/aar-kay-vaishno-dhaba-nakodar-road-abadpura-nakodar-chowk-jalandhar-248278",
@@ -385,20 +385,20 @@ const restarunrantList = [
         "opened": true
       },
       "badges": {
-        
+
       },
       "isOpen": true,
       "type": "F",
       "badgesV2": {
         "entityBadges": {
           "imageBased": {
-            
+
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -411,23 +411,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/yummy-delicious-till-last-bite-guru-teg-bahadur-nagar-model-town-jalandhar-283810",
@@ -468,20 +468,20 @@ const restarunrantList = [
         "opened": true
       },
       "badges": {
-        
+
       },
       "isOpen": true,
       "type": "F",
       "badgesV2": {
         "entityBadges": {
           "imageBased": {
-            
+
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -494,23 +494,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/dhan-guru-ramdass-sweet-shop-shaheed-bagat-singh-chowk-north-jalandhar-jalandhar-136845",
@@ -572,10 +572,10 @@ const restarunrantList = [
             ]
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -587,23 +587,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/nanak-vegetarian-dhaba-model-town-kapurthala-chowk-jalandhar-285860",
@@ -665,10 +665,10 @@ const restarunrantList = [
             ]
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -682,23 +682,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/bliss-vaishno-dhaba-mohyal-nagar-bmc-chowk-jalandhar-115812",
@@ -760,10 +760,10 @@ const restarunrantList = [
             ]
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -777,23 +777,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/s-k-dhaba-model-town-bmc-chowk-jalandhar-80969",
@@ -829,20 +829,20 @@ const restarunrantList = [
         "opened": true
       },
       "badges": {
-        
+
       },
       "isOpen": true,
       "type": "F",
       "badgesV2": {
         "entityBadges": {
           "imageBased": {
-            
+
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -855,23 +855,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/burger-king-guru-nanak-mission-chowk-lajpat-nagar-jalandhar-91788",
@@ -910,20 +910,20 @@ const restarunrantList = [
         "opened": true
       },
       "badges": {
-        
+
       },
       "isOpen": true,
       "type": "F",
       "badgesV2": {
         "entityBadges": {
           "imageBased": {
-            
+
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -936,23 +936,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/kfc-mahavir-marg-shastri-nagar-jalandhar-347917",
@@ -988,20 +988,20 @@ const restarunrantList = [
         "opened": true
       },
       "badges": {
-        
+
       },
       "isOpen": true,
       "type": "F",
       "badgesV2": {
         "entityBadges": {
           "imageBased": {
-            
+
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -1014,23 +1014,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/mcdonalds-bmc-chowk-shastri-nagar-jalandhar-254008",
@@ -1079,7 +1079,7 @@ const restarunrantList = [
       },
       "isOpen": true,
       "aggregatedDiscountInfoV2": {
-        
+
       },
       "type": "F",
       "badgesV2": {
@@ -1094,12 +1094,7 @@ const restarunrantList = [
               }
             ]
           },
-          "textBased": {
-            
-          },
-          "textExtendedBadges": {
-            
-          }
+          "textBased": {}, "textExtendedBadges": {}
         }
       },
       "differentiatedUi": {
@@ -1107,23 +1102,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/oberoi-special-chana-bhatura-jyoti-chowk-jalandhar-262007",
@@ -1181,10 +1176,10 @@ const restarunrantList = [
             ]
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -1197,23 +1192,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/maddi-refreshments-shastri-nagar-maqsudan-jalandhar-98907",
@@ -1262,10 +1257,10 @@ const restarunrantList = [
       "badgesV2": {
         "entityBadges": {
           "imageBased": {
-            
+
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
             "badgeObject": [
@@ -1290,23 +1285,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/dominos-pizza-centrum-jyoti-mall-shastri-nagar-jalandhar-72826",
@@ -1345,20 +1340,20 @@ const restarunrantList = [
         "opened": true
       },
       "badges": {
-        
+
       },
       "isOpen": true,
       "type": "F",
       "badgesV2": {
         "entityBadges": {
           "imageBased": {
-            
+
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -1371,23 +1366,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/wendys-burgers-guru-nanak-mission-chowk-shastri-nagar-jalandhar-444143",
@@ -1427,23 +1422,23 @@ const restarunrantList = [
         "opened": true
       },
       "badges": {
-        
+
       },
       "isOpen": true,
       "aggregatedDiscountInfoV2": {
-        
+
       },
       "type": "F",
       "badgesV2": {
         "entityBadges": {
           "imageBased": {
-            
+
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -1452,23 +1447,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/hotel-dolphin-gt-road-adarsh-nagar-jalandhar-100794",
@@ -1531,10 +1526,10 @@ const restarunrantList = [
             ]
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -1548,42 +1543,24 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
-    },
-    "analytics": {
-      
-    },
-    "cta": {
-      "link": "https://www.swiggy.com/restaurants/food-bazar-model-town-jalandhar-284183",
-      "type": "WEBLINK"
-    }
-  },
-  {
+    }, "analytics": {}, "cta": { "link": "https://www.swiggy.com/restaurants/food-bazar-model-town-jalandhar-284183", "type": "WEBLINK" }
+  }, {
     "info": {
-      "id": "74229",
-      "name": "Kulcha Land",
-      "cloudinaryImageId": "y5fy1tuznuavqugprna8",
-      "locality": "Model Town",
-      "areaName": "Model Town",
-      "costForTwo": "₹150 for two",
-      "cuisines": [
-        "Indian",
-        "Snacks",
-        "Street Food"
-      ],
+      "id": "74229", "name": "Kulcha Land", "cloudinaryImageId": "y5fy1tuznuavqugprna8", "locality": "Model Town", "areaName": "Model Town", "costForTwo": "₹150 for two", "cuisines": ["Indian", "Snacks", "Street Food"],
       "avgRating": 4.4,
       "parentId": "121580",
       "avgRatingString": "4.4",
@@ -1623,10 +1600,10 @@ const restarunrantList = [
             ]
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -1639,23 +1616,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/kulcha-land-model-town-jalandhar-74229",
@@ -1692,20 +1669,20 @@ const restarunrantList = [
         "opened": true
       },
       "badges": {
-        
+
       },
       "isOpen": true,
       "type": "F",
       "badgesV2": {
         "entityBadges": {
           "imageBased": {
-            
+
           },
           "textBased": {
-            
+
           },
           "textExtendedBadges": {
-            
+
           }
         }
       },
@@ -1718,23 +1695,23 @@ const restarunrantList = [
         "differentiatedUiMediaDetails": {
           "mediaType": "ADS_MEDIA_ENUM_IMAGE",
           "lottie": {
-            
+
           },
           "video": {
-            
+
           }
         }
       },
       "reviewsSummary": {
-        
+
       },
       "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
       "restaurantOfferPresentationInfo": {
-        
+
       }
     },
     "analytics": {
-      
+
     },
     "cta": {
       "link": "https://www.swiggy.com/restaurants/grameen-kulfi-abadpura-model-town-jalandhar-359786",
@@ -1743,7 +1720,7 @@ const restarunrantList = [
   }
 ];
 
-function Title(){
+function Title() {
   return (<a href="/" className="logo">
     butter & Nan
     {
@@ -1751,20 +1728,20 @@ function Title(){
       // jsx is not mandatory in react
       // es6 is not mandatory 
     }
-    </a>);
+  </a>);
 }
-const  Header = ()=>{
+const Header = () => {
   return <div className="header ">
-    <Title/>
+    <Title />
     <div className="nav-items">
       <ul>
-        <li>Home</li>
-        <li>Offers</li>
-        <li>Help</li>
-        <li>Cart</li>
+        <li><i class="fa-solid fa-house"></i> Home</li>
+        <li><i class="fa-solid fa-gift"></i> Offers</li>
+        <li><i class="fa-solid fa-question"></i> Help</li>
+        <li><i class="fa-solid fa-cart-shopping"></i> Cart</li>
       </ul>
     </div>
-    </div>
+  </div>
 }
 
 const config = [
@@ -1797,11 +1774,11 @@ const config = [
     ]
   }
 ]
-const RestarunrantCard = ({name, cuisines, cloudinaryImageId, avgRating,locality})=>{
+const RestarunrantCard = ({ name, cuisines, cloudinaryImageId, avgRating, locality }) => {
   // const waitTime = restarunrant.info.sla.slaString;
   return (
     <div className="card">
-      <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId}/>
+      <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId} />
       <h2>{name}</h2>
       <h4>{avgRating} stars</h4>
       <p>{locality}</p>
@@ -1809,55 +1786,55 @@ const RestarunrantCard = ({name, cuisines, cloudinaryImageId, avgRating,locality
     </div>
   )
 }
-const Body = ()=>{
+const Body = () => {
   return (
     <div className="restaurant-list">
       {
-        restarunrantList.map((restarunrant, index) =>{
-          return <RestarunrantCard {...restarunrant.info}/>
+        restarunrantList.map((restarunrant) => {
+          return <RestarunrantCard {...restarunrant.info} />
         })
       }
     </div>
-    );
+  );
 }
-const Footer = ()=>{
+const Footer = () => {
   return (
-    <h4>footer</h4> 
+    <h4>footer</h4>
   )
 }
-const AppLayout = ()=>{
+const AppLayout = () => {
   return (
     <>
-    <Header/>
-    <Body/>
-    <Footer/>
+      <Header />
+      <Body />
+      <Footer />
     </>
-    
-    
-    
-    )
 
-    { 
-      /**
-       * header
-       *  - logo
-       *  - nav items(right side)
-       *  - cart
-       * body
-       *  - search bar
-       *  - Reastrauntlist
-       *    - restarunrant card
-       *      - Image
-       *      - name
-       *      - rating
-       *      - cusines
-       * footer
-       *  - links 
-       *  - copyright
-       */
-    }
+
+
+  )
+
+  {
+    /**
+     * header
+     *  - logo
+     *  - nav items(right side)
+     *  - cart
+     * body
+     *  - search bar
+     *  - Reastrauntlist
+     *    - restarunrant card
+     *      - Image
+     *      - name
+     *      - rating
+     *      - cusines
+     * footer
+     *  - links 
+     *  - copyright
+     */
+  }
 }
-root.render(<AppLayout/>);
+root.render(<AppLayout />);
 // pollyfil it genartes the new code to old code that broweser may understand for: eg : array.map() to myMap() this is done by bable
 // browser list conatains  list of broweser and is responsovle for telling bable for what it has to convert 
 // babel plugin transform remove console to remove console logs
