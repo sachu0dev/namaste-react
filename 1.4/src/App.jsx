@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Body from "./components/Body.jsx";
+import Footer from "./components/Footer.jsx";
 import { Header, Title } from "./components/Header.jsx";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -1764,22 +1766,7 @@ const RestarunrantCard = ({ name, cuisines, cloudinaryImageId, avgRating, locali
     </div>
   )
 }
-const Body = () => {
-  return (
-    <div className="restaurant-list">
-      {
-        restarunrantList.map((restarunrant) => {
-          return <RestarunrantCard {...restarunrant.info} />
-        })
-      }
-    </div>
-  );
-}
-const Footer = () => {
-  return (
-    <h4>footer</h4>
-  )
-}
+
 const AppLayout = () => {
   return (
     <>

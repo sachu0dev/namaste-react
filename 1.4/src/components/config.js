@@ -1,0 +1,1 @@
+//  puting all hard coded things in this
