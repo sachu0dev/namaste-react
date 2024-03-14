@@ -1,6 +1,6 @@
 export const  Title= ()=> {
   return (<a href="/" className="logo">
-    butter & Nan
+    Butter & Nan
     {
       // this is comment
       // jsx is not mandatory in react
