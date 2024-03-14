@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import Body from "./components/Body.jsx";
 import Footer from "./components/Footer.jsx";
 import { Header, Title } from "./components/Header.jsx";
-import { IMG_CDN_URL } from "./components/constant.js";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 

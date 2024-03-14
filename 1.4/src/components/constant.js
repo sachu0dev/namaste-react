@@ -39,7 +39,7 @@ export const restarunrantList = [
       "type": "F",
       "badgesV2": {
         "entityBadges": {
-          "imageBased": {
+          "imageBased": { 
 
           },
           "textBased": {
