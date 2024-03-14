@@ -1,13 +1,15 @@
-const body = () => {
+import { restarunrantList } from "./constant.js";
+import RestarunrantCard from "./restaurantCard.jsx";
+const Body = () => {
   return (
-    <div classname="restaurant-list">
+    <div className="restaurant-list">
       {
-        restarunrantlist.map((restarunrant) => {
-          return <restarunrantcard {...restarunrant.info} />
+        restarunrantList.map((restarunrant) => {
+          return <RestarunrantCard {...restarunrant.info} key={restarunrant.info.id}/>
         })
       }
     </div>
   );
 }
 
-export default body;
+export default Body;
