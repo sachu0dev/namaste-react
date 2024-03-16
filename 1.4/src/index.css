@@ -97,7 +97,6 @@ html,body{
   transition: all .1s ease-in;
   overflow: hidden;
   color: var(--dark-green);
-  box-shadow: var(--box-shadow);
 
 }
 .card:hover{
