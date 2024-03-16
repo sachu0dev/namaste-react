@@ -1,18 +1,19 @@
 import { useEffect, useState } from "react";
-import { restarunrantList } from "./constant.js";
+import Shimmer from "./Shimmer.jsx";
 import RestarunrantCard from "./restaurantCard.jsx";
 
-function filterData(searchTxt, restarunrants) {
+function filterData(searchTxt, allRestaurants) {
   if(searchTxt !== ""){
-    return restarunrants.filter((restarunrant) =>
+    return allRestaurants.filter((restarunrant) =>
       restarunrant.info.name.toLowerCase().includes(searchTxt.toLowerCase())
     );
   }
-  return restarunrantList; 
+  return allRestaurants; 
 }
 
 const Body = () => {
-  const [restarunrants, setRestaurants] = useState(restarunrantList);
+  const [allRestaurants, setAllRestaurants] = useState([])
+  const [filteredRestaurants, setFilteredRestaurant] = useState([1]);
   const [searchTxt, setSearchTxt] = useState("");
   
     useEffect(()=>{
@@ -22,16 +23,34 @@ const Body = () => {
     async function getRestaurants(){
       const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=31.00480&lng=75.94630&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
       const json = await data.json();
-      console.log(json);
-      const temprestaurants = 
-      setRestaurants(json.data.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+      setFilteredRestaurant(json.data.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+      setAllRestaurants(json.data.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
   const handleSearch = () => {
-    const data = filterData(searchTxt, restarunrantList);
-    setRestaurants(data);
+    const data = filterData(searchTxt, allRestaurants);
+    setFilteredRestaurant(data);
   };
-
-  return (
+  if(filteredRestaurants?.length === 0) return (
+    <>
+    <div className="search-container">
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Search"
+          value={searchTxt}
+          onChange={(e) => {
+            setSearchTxt(e.target.value);
+          }
+          }
+        />
+        <button className="search-btn" onClick={handleSearch}>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      
+    </>
+  )
+  return (allRestaurants.length === 0) ? <Shimmer/> : (
     <>
       <div className="search-container">
         <input
@@ -49,7 +68,7 @@ const Body = () => {
         </button>
       </div>
       <div className="restaurant-list">
-        {restarunrants.map((restarunrant) => (
+        {filteredRestaurants.map((restarunrant) => (
           <RestarunrantCard {...restarunrant.info} key={restarunrant.info.id} />
         ))}
       </div>
