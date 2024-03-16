@@ -1,11 +1,6 @@
 export const  Title= ()=> {
   return (<a href="/" className="logo">
     Butter & Nan
-    {
-      // this is comment
-      // jsx is not mandatory in react
-      // es6 is not mandatory 
-    }
   </a>);
 }
 export const Header = () => {

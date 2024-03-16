@@ -2,7 +2,6 @@ import { IMG_CDN_URL, restarunrantList } from "./constant";
 
 const RestarunrantCard = (restarunrant) => {
   const { name, cuisines, cloudinaryImageId, avgRating, locality } = restarunrant;
-  console.log(restarunrant)
   const waitTime = restarunrant.sla.slaString;
   return (
     <div className="card">

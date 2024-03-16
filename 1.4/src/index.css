@@ -75,6 +75,7 @@ html,body{
   width: 30vw;
   box-shadow: var(--box-shadow);
   background-color: var(--light-gray);
+  padding-left: 2rem;
 }
 .search-btn{
   padding: 1rem;
@@ -89,7 +90,7 @@ html,body{
 /* body */
 
 .card{
-  width: 320px;
+  width: 380px;
   height: 400px;
   border-radius: 2rem;
   padding: 1rem;
