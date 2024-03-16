@@ -36,7 +36,6 @@ const Shimmer = ()=>{
       <Cards/>
       <Cards/>
       <Cards/>
-      <Cards/>
     </div>
     </>
   )
