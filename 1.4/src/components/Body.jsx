@@ -16,8 +16,16 @@ const Body = () => {
   const [searchTxt, setSearchTxt] = useState("");
   
     useEffect(()=>{
-      console.log("useEffect")
+      getRestaurants();
     }, [])
+
+    async function getRestaurants(){
+      const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=31.00480&lng=75.94630&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+      const json = await data.json();
+      console.log(json);
+      const temprestaurants = 
+      setRestaurants(json.data.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    }
   const handleSearch = () => {
     const data = filterData(searchTxt, restarunrantList);
     setRestaurants(data);
