@@ -17,26 +17,6 @@ const AppLayout = () => {
 
 
   )
-
-  {
-    /**
-     * header
-     *  - logo
-     *  - nav items(right side)
-     *  - cart
-     * body
-     *  - search bar
-     *  - Reastrauntlist
-     *    - restarunrant card
-     *      - Image
-     *      - name
-     *      - rating
-     *      - cusines
-     * footer
-     *  - links 
-     *  - copyright
-     */
-  }
 }
 root.render(<AppLayout />);
 // pollyfil it genartes the new code to old code that broweser may understand for: eg : array.map() to myMap() this is done by bable
