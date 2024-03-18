@@ -34,6 +34,9 @@ html,body{
   position: relative;
 
 }
+a{
+  color: #e1d9cf;
+}
 /* header */
 .header {
   display: flex;

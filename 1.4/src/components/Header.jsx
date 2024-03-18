@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const loggedInUser = () => {
   return false;
 };
+
 export const Title = () => {
   return (
     <a href="/" className="logo">
@@ -17,15 +19,23 @@ export const Header = () => {
       <Title />
       <div className="nav-items">
         <ul>
-          <li>
-            <i className="fa-solid fa-house"></i> Home
-          </li>
-          <li>
-            <i className="fa-solid fa-gift"></i> Offers
-          </li>
-          <li>
-            <i className="fa-solid fa-question"></i> About
-          </li>
+          <Link to="/">
+            <li>
+              <i className="fa-solid fa-house"></i> Home
+            </li>
+          </Link>
+          <Link to="contact">
+            <li>
+              <i className="fa-solid fa-gift"></i> Contact
+            </li>
+          </Link>
+
+          <Link to="/about">
+            <li>
+              <i className="fa-solid fa-question"></i> About
+            </li>
+          </Link>
+
           <li>
             <i className="fa-solid fa-cart-shopping"></i> Cart
           </li>
