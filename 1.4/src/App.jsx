@@ -7,6 +7,7 @@ import Contact from "./components/Contact.jsx";
 import Error from "./components/Error.jsx";
 import Footer from "./components/Footer.jsx";
 import { Header, Title } from "./components/Header.jsx";
+import RestaurantMenu from "./components/RestaurantMenu.jsx";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const AppLayout = () => {
@@ -36,16 +37,11 @@ const appRouter = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
+      {
+        path: "restaurant/:id",
+        element: <RestaurantMrenu />,
+      },
     ],
-  },
-  {
-    path: "/about",
-    element: (
-      <>
-        <Header />
-        <About />
-      </>
-    ),
   },
 ]);
 root.render(<RouterProvider router={appRouter} />);
