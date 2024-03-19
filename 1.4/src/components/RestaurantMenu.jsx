@@ -5,7 +5,7 @@ const RestaurantMenu = () => {
   const { id } = useParams();
 
   const [restaurantInfo, setRestaurantInfo] = useState({});
-  const [restaurantMenu, setRestaurantMenu] = useState({});
+  const [restaurantMenu, setRestaurantMenu] = useState([]);
 
   useEffect(() => {
     getRestaurantInfo();
@@ -18,11 +18,27 @@ const RestaurantMenu = () => {
     const info = await data.json();
     console.log(info);
     setRestaurantMenu(
-      info.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[3].card.card
-        .categories[0].itemCards
+      info.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card
+        .itemCards
     );
     setRestaurantInfo(info.data.cards[0].card.card.info);
   }
+
+  const Menu = () => {
+    return restaurantMenu.map((item) => {
+      const info = item.card.info;
+      return (
+        <div>
+          <h3>{info.name}</h3>
+          <h3>{info.description}</h3>
+          <h3>₹{info.price / 100}</h3>
+          <img
+            src={`https://media-assets.swiggy.com/swiggy/image/upload/${info.imageId}`}
+          />
+        </div>
+      );
+    });
+  };
 
   return (
     <div>
@@ -35,7 +51,9 @@ const RestaurantMenu = () => {
         <h3>{restaurantInfo.avgRating}</h3>
         <h3>{restaurantInfo.costForTwoMessage}</h3>
       </div>
-      <div>{restaurantInfo.menu.items}</div>
+      <div>
+        <Menu />
+      </div>
     </div>
   );
 };

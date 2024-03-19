@@ -44,7 +44,7 @@ a{
   color: #e1d9cf;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10 vw;
+  padding: 1rem 10vw;
   box-shadow: var(--box-shadow);
 }
 .logo{
