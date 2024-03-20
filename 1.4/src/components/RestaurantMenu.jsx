@@ -38,12 +38,12 @@ const RestaurantMenu = () => {
     <div className="menu-container">
       <div className="menu-left">
         <div>
-          <h2>{restaurantInfo.name}</h2>
+          <h1>{restaurantInfo.name}</h1>
           <h3>{restaurantInfo.area}</h3>
           <h3>{restaurantInfo.city}</h3>
           <h3>{restaurantInfo.cuisines.join(", ")}</h3>
         </div>
-        <div>
+        <div className="ratting-box">
           <h3>{restaurantInfo.avgRating}</h3>
           <h3>{restaurantInfo.costForTwoMessage}</h3>
         </div>
@@ -61,9 +61,9 @@ const RestaurantMenu = () => {
           return (
             <div className="menu-list">
               <div className="menu-list-text">
-                <h3>{info.name}</h3>
+                <h3 className="item-name">{info.name}</h3>
                 <h3>{info.description}</h3>
-                <h3>₹{info.price / 100}</h3>
+                <h3 className="price">₹{info.price / 100}</h3>
               </div>
               <div className="img-container-list">
                 <img

@@ -32,10 +32,14 @@ html,body{
   height: 100%;
   background-color: var(--light-gray);
   position: relative;
-
 }
 a{
   color: #e1d9cf;
+}
+h3{
+  margin-bottom: 1rem;
+  color: var(--dark-orange);
+  font-weight: 400;
 }
 /* header */
 .header {
@@ -209,6 +213,9 @@ a{
   justify-content: left;
   height: auto;
   color: var(--dark-green);
+  background-color: var(--dark-gray);
+  padding: 2rem;
+  border-radius: 1rem;
 }
 .menu-left{
   display: flex;
@@ -219,37 +226,53 @@ a{
   font-size: 2rem;
   padding: 1rem 1rem;
   border-bottom: 3px solid var(--ligth-cream);
-}
-.menu-container img{
-  width: 100%;
+
 }
 .restaurant-img{
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   object-fit: cover;
+  border-radius: 1rem;
+
+  
 }
 .menu-list{
   padding: 1rem 0;
-  border-bottom: 2px solid var(--ligth-cream);
+  border-bottom: 3px solid var(--ligth-cream);
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--dark-gray);
+
 }
 
 .menu-list-text{
   width: 30vw;
 }
 .img-container-list{
-  width: 10vw;
+  width: 7vw;
   height: 10vh;
   background-color: lightgray;
+  border-radius: 2rem;
 }
 .img-container-list img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-
+  border-radius: 2rem;
 }
 .menu-list{
   display: flex;
   width: 100%;
+}
+.item-name{
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--dark-green);
+}
+.price{
+  color: var(--light-green);
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 
