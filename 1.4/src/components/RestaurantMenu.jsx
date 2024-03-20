@@ -12,16 +12,20 @@ const RestaurantMenu = () => {
   }, []);
 
   async function getRestaurantInfo() {
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=31.00480&lng=75.94630&restaurantId=496806"
-    );
-    const info = await data.json();
-    console.log(info);
-    setRestaurantMenu(
-      info.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card
-        .itemCards
-    );
-    setRestaurantInfo(info.data.cards[0].card.card.info);
+    try {
+      const data = await fetch(
+        "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=31.00480&lng=75.94630&restaurantId=496806"
+      );
+      const info = await data.json();
+      console.log(info);
+      setRestaurantMenu(
+        info.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card
+          .itemCards
+      );
+      setRestaurantInfo(info.data.cards[0].card.card.info);
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   const Menu = () => {
@@ -52,6 +56,7 @@ const RestaurantMenu = () => {
         <h3>{restaurantInfo.costForTwoMessage}</h3>
       </div>
       <div>
+        <h1>menu</h1>
         <Menu />
       </div>
     </div>
