@@ -274,5 +274,7 @@ h3{
   font-size: 1.3rem;
   font-weight: 700;
 }
-
+.ratting-box{
+  color: var(--dark-green);
+}
 

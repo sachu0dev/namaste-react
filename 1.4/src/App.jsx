@@ -7,6 +7,7 @@ import Contact from "./components/Contact.jsx";
 import Error from "./components/Error.jsx";
 import Footer from "./components/Footer.jsx";
 import { Header, Title } from "./components/Header.jsx";
+import Profile from "./components/Profile.jsx";
 import RestaurantMenu from "./components/RestaurantMenu.jsx";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -32,6 +33,12 @@ const appRouter = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+        children: [
+          {
+            path: "profile",
+            element: <Profile />,
+          },
+        ],
       },
       {
         path: "/contact",
