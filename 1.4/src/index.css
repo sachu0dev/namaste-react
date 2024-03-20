@@ -274,7 +274,22 @@ h3{
   font-size: 1.3rem;
   font-weight: 700;
 }
-.ratting-box{
+.rating-box{
+  font-size: 2.5rem;
   color: var(--dark-green);
+  font-weight: 700;
 }
+.cuissines-name{
+  font-size: 3rem;
+  font-weight: 500;
+}
+.city{
+  color: var(--light-black);
+}
+.rate-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+}
