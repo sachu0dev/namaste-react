@@ -5,34 +5,7 @@ import Shimmer from "./Shimmer";
 import { IMG_CDN_URL } from "./constant";
 const RestaurantMenu = () => {
   const { id } = useParams();
-
   const { restaurantInfo, restaurantMenu } = useRestaurant(id);
-  // const [restaurantInfo, setRestaurantInfo] = useState(null);
-  // const [restaurantMenu, setRestaurantMenu] = useState(null);
-
-  // useEffect(() => {
-  //   getRestaurantInfo();
-  // }, []);
-
-  // async function getRestaurantInfo() {
-  //   const data = await fetch(
-  //     `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=31.00480&lng=75.94630&restaurantId=${id}`
-  //   );
-  //   const info = await data.json();
-  //   const checkInput =
-  //     info.data.cards[2]?.groupedCard?.cardGroupMap.REGULAR?.cards[2]?.card
-  //       ?.card?.itemCards;
-  //   console.log(checkInput);
-  //   if (checkInput === undefined || null) {
-  //     setRestaurantMenu(
-  //       info.data.cards[2]?.groupedCard?.cardGroupMap.REGULAR?.cards[1]?.card
-  //         ?.card?.itemCards
-  //     );
-  //   } else {
-  //     setRestaurantMenu(checkInput);
-  //   }
-  //   setRestaurantInfo(info.data.cards[0].card.card.info);
-  // }
 
   return !restaurantInfo ? (
     <Shimmer />
