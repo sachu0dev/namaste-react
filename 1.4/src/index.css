@@ -244,7 +244,9 @@ h3{
   background-color: var(--dark-gray);
 
 }
-
+.show-profile{
+  color: black;
+}
 .menu-list-text{
   width: 30vw;
 }

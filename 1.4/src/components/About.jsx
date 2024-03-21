@@ -1,5 +1,5 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 // const About = () => {
 //   return (
 //     <div>
@@ -35,7 +35,9 @@ class About extends React.Component {
           {" "}
           This is the namaste react live Course Chapter - 07 - finding the path
         </p>
-
+        <Link className="show-profile" to="/about/profile">
+          show profile
+        </Link>
         <Outlet />
       </div>
     );
