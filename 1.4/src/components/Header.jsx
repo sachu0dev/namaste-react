@@ -12,8 +12,10 @@ export const Title = () => {
     </a>
   );
 };
+
 export const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <div className="header ">
       <Title />
