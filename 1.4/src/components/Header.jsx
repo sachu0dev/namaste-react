@@ -37,6 +37,11 @@ export const Header = () => {
               <i className="fa-solid fa-question"></i> About
             </li>
           </Link>
+          <Link to="/instamart">
+            <li>
+              <i className="fa-solid fa-question"></i> Instamart
+            </li>
+          </Link>
 
           <li>
             <i className="fa-solid fa-cart-shopping"></i> Cart

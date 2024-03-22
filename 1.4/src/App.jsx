@@ -1,7 +1,6 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import ReactDOM from "react-dom/client";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
-import About from "./components/About.jsx";
 import Body from "./components/Body.jsx";
 import Contact from "./components/Contact.jsx";
 import Error from "./components/Error.jsx";
@@ -9,8 +8,11 @@ import Footer from "./components/Footer.jsx";
 import { Header, Title } from "./components/Header.jsx";
 import Profile from "./components/Profile.jsx";
 import RestaurantMenu from "./components/RestaurantMenu.jsx";
+import Shimmer from "./components/Shimmer.jsx";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+const Instamart = lazy(() => import("./components/Instamart.jsx"));
+const About = lazy(() => import("./components/About.jsx"));
 const AppLayout = () => {
   return (
     <>
@@ -32,7 +34,11 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: (
+          <Suspense fallback={<h1>Loading</h1>}>
+            <About />,
+          </Suspense>
+        ),
         children: [
           {
             path: "profile",
@@ -47,6 +53,14 @@ const appRouter = createBrowserRouter([
       {
         path: "restaurant/:id",
         element: <RestaurantMenu />,
+      },
+      {
+        path: "instamart",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Instamart />
+          </Suspense>
+        ),
       },
     ],
   },
