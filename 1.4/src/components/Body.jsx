@@ -27,7 +27,7 @@ const Body = () => {
   if (filteredRestaurants?.length === 0)
     return (
       <>
-        <div className="search-container">
+        <div className="search-container flex h-4">
           <input
             type="text"
             className="search-input"
@@ -50,7 +50,7 @@ const Body = () => {
       <div className="search-container">
         <input
           type="text"
-          className="search-input"
+          className="search-input text-xl p-3 w-[30vh]"
           placeholder="Search"
           value={searchTxt}
           onChange={(e) => {

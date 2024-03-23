@@ -7,7 +7,7 @@ const loggedInUser = () => {
 
 export const Title = () => {
   return (
-    <a href="/" className="logo">
+    <a href="/" className="logo text-4xl font-extrabold">
       Butter & Nan
     </a>
   );
@@ -17,7 +17,7 @@ export const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
-    <div className="header ">
+    <div className=" header">
       <Title />
       <div className="nav-items">
         <ul>
