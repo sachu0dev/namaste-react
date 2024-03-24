@@ -27,19 +27,24 @@ const Body = () => {
   if (filteredRestaurants?.length === 0)
     return (
       <>
-        <div className="search-container flex h-4">
-          <input
-            type="text"
-            className="search-input"
-            placeholder="Search"
-            value={searchTxt}
-            onChange={(e) => {
-              setSearchTxt(e.target.value);
-            }}
-          />
-          <button className="search-btn" onClick={handleSearch}>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
+        <div className="search-container flex w-[100vw] h-[8vh] justify-center items-center">
+          <div>
+            <input
+              type="text"
+              className="search-input text-[1.2rem] p-3 w-[30vw] bg-light-gray pl-8 mr-4 rounded-full border-2 border-dark-green"
+              placeholder="Search"
+              value={searchTxt}
+              onChange={(e) => {
+                setSearchTxt(e.target.value);
+              }}
+            />
+            <button
+              className="search-btn text-[1.2rem] w-20 h-12 bg-light-gray rounded-full bg-light-orange text-light-cream"
+              onClick={handleSearch}
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
         </div>
       </>
     );
@@ -47,21 +52,26 @@ const Body = () => {
     <Shimmer />
   ) : (
     <>
-      <div className="search-container">
-        <input
-          type="text"
-          className="search-input text-xl p-3 w-[30vh]"
-          placeholder="Search"
-          value={searchTxt}
-          onChange={(e) => {
-            setSearchTxt(e.target.value);
-          }}
-        />
-        <button className="search-btn" onClick={handleSearch}>
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+      <div className="search-container flex w-[100vw] h-[8vh] justify-center items-center">
+        <div>
+          <input
+            type="text"
+            className="search-input text-[1.2rem] p-3 w-[30vw] bg-light-gray pl-8 mr-4 rounded-full border-2 border-dark-green"
+            placeholder="Search"
+            value={searchTxt}
+            onChange={(e) => {
+              setSearchTxt(e.target.value);
+            }}
+          />
+          <button
+            className="search-btn text-[1.2rem] w-20 h-12 bg-light-gray rounded-full bg-light-orange text-light-cream"
+            onClick={handleSearch}
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
       </div>
-      <div className="restaurant-list">
+      <div className="restaurant-list grid px-[25vh] grid-cols-4 justify-center items-center flex-wrap">
         {filteredRestaurants.map((restarunrant) => (
           <Link
             to={`restaurant/${restarunrant.info.id}`}

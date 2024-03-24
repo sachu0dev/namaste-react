@@ -17,10 +17,10 @@ export const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
-    <div className=" header">
+    <div className=" header flex bg-light-black text-light-cream justify-between items-center px-[10vw] py-4 shadow-md">
       <Title />
       <div className="nav-items">
-        <ul>
+        <ul className="flex gap-12  text-lg">
           <Link to="/">
             <li>
               <i className="fa-solid fa-house"></i> Home
