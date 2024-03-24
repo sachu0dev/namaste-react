@@ -71,7 +71,7 @@ const Body = () => {
           </button>
         </div>
       </div>
-      <div className="restaurant-list grid px-[25vh] grid-cols-4 justify-center items-center flex-wrap">
+      <div className="restaurant-list grid px-[20vh] grid-cols-4 justify-center items-center flex-wrap">
         {filteredRestaurants.map((restarunrant) => (
           <Link
             to={`restaurant/${restarunrant.info.id}`}

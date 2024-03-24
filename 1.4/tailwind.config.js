@@ -19,7 +19,8 @@ module.exports = {
       "light-cream" : "#e1d9cf",
       "dark-cream": "#d6c4b0",
       "light-gray": "#ededed",
-      "dark-gray": "#ede6df"
+      "dark-gray": "#ede6df",
+      "lightgray": "#d3d3d3",
     }
   },
   plugins: [],
