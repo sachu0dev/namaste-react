@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import useRestaurant from "../Utils/useRestaurant";
 import Shimmer from "./Shimmer";
@@ -67,6 +66,10 @@ const RestaurantMenu = () => {
           );
         })}
       </div>
+      {/* {console.log(categories)}
+      {categories.map((category) => {
+        <RestaurantCategory />;
+      })} */}
     </div>
   );
 };

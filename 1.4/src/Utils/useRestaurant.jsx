@@ -8,14 +8,18 @@ const useRestaurant = (id) => {
   useEffect(() => {
     getRestaurantInfo();
   }, []);
-
   async function getRestaurantInfo() {
     const data = await fetch(FETCH_MENU_URL + id);
     const info = await data.json();
+    const categories =
+      info.data.cards[2]?.groupedCard?.cardGroupMap.REGULAR?.cards.filter(
+        (c) =>
+          c.card.card?.["@type"] ==
+          "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+      );
     const checkInput =
       info.data.cards[2]?.groupedCard?.cardGroupMap.REGULAR?.cards[2]?.card
         ?.card?.itemCards;
-    console.log(checkInput);
     if (checkInput === undefined || null) {
       setRestaurantMenu(
         info.data.cards[2]?.groupedCard?.cardGroupMap.REGULAR?.cards[1]?.card

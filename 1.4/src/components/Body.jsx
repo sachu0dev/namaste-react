@@ -4,7 +4,7 @@ import { filterData } from "../Utils/helper.js";
 import useOnline from "../Utils/useOnline.jsx";
 import useRestaurants from "../Utils/useRestarants.jsx";
 import Shimmer from "./Shimmer.jsx";
-import RestarunrantCard from "./restaurantCard.jsx";
+import RestarunrantCard, { withOpenLabel } from "./restaurantCard.jsx";
 
 const Body = () => {
   const [searchTxt, setSearchTxt] = useState("");
@@ -14,6 +14,8 @@ const Body = () => {
     filteredRestaurants,
     setFilteredRestaurant,
   } = useRestaurants();
+
+  const RestaurantCardOpen = withOpenLabel(RestarunrantCard);
 
   const isOnline = useOnline();
 
@@ -77,7 +79,11 @@ const Body = () => {
             to={`restaurant/${restarunrant.info.id}`}
             key={restarunrant.info.id}
           >
-            <RestarunrantCard {...restarunrant.info} />
+            {restarunrant.info.isOpen ? (
+              <RestaurantCardOpen {...restarunrant.info} />
+            ) : (
+              <RestarunrantCard {...restarunrant.info} />
+            )}
           </Link>
         ))}
       </div>
