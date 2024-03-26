@@ -1,10 +1,40 @@
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import useRestaurant from "../Utils/useRestaurant";
+import RestaurantCategory from "./RestaurantCategory";
 import Shimmer from "./Shimmer";
-import { IMG_CDN_URL } from "./constant";
+import { FETCH_MENU_URL, IMG_CDN_URL } from "./constant";
 const RestaurantMenu = () => {
   const { id } = useParams();
-  const { restaurantInfo, restaurantMenu } = useRestaurant(id);
+  const [restaurantInfo, setRestaurantInfo] = useState(null);
+  const [restaurantMenu, setRestaurantMenu] = useState(null);
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    getRestaurantInfo();
+  }, []);
+  async function getRestaurantInfo() {
+    const data = await fetch(FETCH_MENU_URL + id);
+    const info = await data.json();
+    const menuList =
+      info.data.cards[2]?.groupedCard?.cardGroupMap.REGULAR?.cards.filter(
+        (c) =>
+          c.card.card?.["@type"] ==
+          "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+      );
+    setCategories(menuList);
+    const checkInput =
+      info.data.cards[2]?.groupedCard?.cardGroupMap.REGULAR?.cards[2]?.card
+        ?.card?.itemCards;
+    if (checkInput === undefined || null) {
+      setRestaurantMenu(
+        info.data.cards[2]?.groupedCard?.cardGroupMap.REGULAR?.cards[1]?.card
+          ?.card?.itemCards
+      );
+    } else {
+      setRestaurantMenu(checkInput);
+    }
+    setRestaurantInfo(info.data.cards[0].card.card.info);
+  }
 
   return !restaurantInfo ? (
     <Shimmer />
@@ -40,36 +70,16 @@ const RestaurantMenu = () => {
         <p className="menu-header mt-8 text-4xl p-4 ">
           menu <i class="fa-solid fa-bowl-food"></i>
         </p>
-        {restaurantMenu.map((item) => {
-          const info = item?.card?.info;
-          return (
-            <div className="menu-list py-4 flex justify-between">
-              <div className="menu-list-text w-[30vw]">
-                <h3 className="item-name text-xl font-bold text-dark-green mb-2">
-                  {info.name}
-                </h3>
-                <h3 className="text-dark-orange font-medium mb-2">
-                  {info.description}
-                </h3>
-                <h3 className="price text-light-green text-lg font-bold">
-                  ₹{info.price / 100}
-                </h3>
-              </div>
-              <div className="img-container-list w-[7vw] h-[10vh] bg-lightgray rounded-xl ml-12">
-                <img
-                  className="w-full h-full object-cover rounded-xl"
-                  alt={info.name}
-                  src={`https://media-assets.swiggy.com/swiggy/image/upload/${info.imageId}`}
-                />
-              </div>
-            </div>
-          );
-        })}
       </div>
-      {/* {console.log(categories)}
       {categories.map((category) => {
-        <RestaurantCategory />;
-      })} */}
+        console.log(category);
+        return (
+          <div>
+            <h1 className="w-full bg-black">{category.card.card.title}</h1>
+            <RestaurantCategory itemCards={category.card.card.itemCards} />
+          </div>
+        );
+      })}
     </div>
   );
 };
