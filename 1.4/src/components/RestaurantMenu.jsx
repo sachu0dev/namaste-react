@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import RestaurantCategory from "./RestaurantCategory";
 import Shimmer from "./Shimmer";
@@ -6,33 +6,22 @@ import { FETCH_MENU_URL, IMG_CDN_URL } from "./constant";
 const RestaurantMenu = () => {
   const { id } = useParams();
   const [restaurantInfo, setRestaurantInfo] = useState(null);
-  const [restaurantMenu, setRestaurantMenu] = useState(null);
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState(null);
 
-  useEffect(() => {
-    getRestaurantInfo();
-  }, []);
+  getRestaurantInfo();
+
   async function getRestaurantInfo() {
     const data = await fetch(FETCH_MENU_URL + id);
     const info = await data.json();
+    console.log(info);
     const menuList =
-      info.data.cards[2]?.groupedCard?.cardGroupMap.REGULAR?.cards.filter(
+      info.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards.filter(
         (c) =>
           c.card.card?.["@type"] ==
           "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
       );
     setCategories(menuList);
-    const checkInput =
-      info.data.cards[2]?.groupedCard?.cardGroupMap.REGULAR?.cards[2]?.card
-        ?.card?.itemCards;
-    if (checkInput === undefined || null) {
-      setRestaurantMenu(
-        info.data.cards[2]?.groupedCard?.cardGroupMap.REGULAR?.cards[1]?.card
-          ?.card?.itemCards
-      );
-    } else {
-      setRestaurantMenu(checkInput);
-    }
+
     setRestaurantInfo(info.data.cards[0].card.card.info);
   }
 
