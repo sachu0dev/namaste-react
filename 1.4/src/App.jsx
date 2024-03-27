@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 const Instamart = lazy(() => import("./components/Instamart.jsx"));
 const About = lazy(() => import("./components/About.jsx"));
 const AppLayout = () => {
-  return (root
+  return (
     <>
       <Header />
       <Outlet />
@@ -26,7 +26,9 @@ const appRouter = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
-    errorElement: <Error />,root
+    errorElement: <Error />,
+    children: [
+      {
         path: "/",
         element: <Body />,
       },
@@ -43,7 +45,7 @@ const appRouter = createBrowserRouter([
             element: <Profile />,
           },
         ],
-      },root
+      },
       {
         path: "/contact",
         element: <Contact />,

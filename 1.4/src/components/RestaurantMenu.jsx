@@ -66,9 +66,7 @@ const RestaurantMenu = () => {
       {categories.map((category) => {
         return (
           <div>
-            <h1 className="w-full bg-black text-light-cream">
-              {category.card.card.title}
-            </h1>
+            <h1 className="w-full bg-black ">{category.card.card.title}</h1>
             <RestaurantCategory itemCards={category.card.card.itemCards} />
           </div>
         );
