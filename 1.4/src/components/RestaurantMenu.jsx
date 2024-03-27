@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import RestaurantCategory from "./RestaurantCategory";
 import Shimmer from "./Shimmer";
@@ -6,14 +6,13 @@ import { FETCH_MENU_URL, IMG_CDN_URL } from "./constant";
 const RestaurantMenu = () => {
   const { id } = useParams();
   const [restaurantInfo, setRestaurantInfo] = useState(null);
-  const [categories, setCategories] = useState(null);
-
-  getRestaurantInfo();
+  const [categories, setCategories] = useState([]);
+  console.log(categories);
+  console.log(restaurantInfo);
 
   async function getRestaurantInfo() {
     const data = await fetch(FETCH_MENU_URL + id);
     const info = await data.json();
-    console.log(info);
     const menuList =
       info.data.cards[4].groupedCard.cardGroupMap.REGULAR.cards.filter(
         (c) =>
@@ -22,8 +21,12 @@ const RestaurantMenu = () => {
       );
     setCategories(menuList);
 
-    setRestaurantInfo(info.data.cards[0].card.card.info);
+    setRestaurantInfo(info.data.cards[2].card.card.info);
   }
+  useEffect(() => {
+    getRestaurantInfo();
+    console.log("its running");
+  }, []);
 
   return !restaurantInfo ? (
     <Shimmer />
@@ -57,14 +60,15 @@ const RestaurantMenu = () => {
       />
       <div className="menu-right">
         <p className="menu-header mt-8 text-4xl p-4 ">
-          menu <i class="fa-solid fa-bowl-food"></i>
+          menu <i class="fa-solid fa-bowl-food"></i>category
         </p>
       </div>
       {categories.map((category) => {
-        console.log(category);
         return (
           <div>
-            <h1 className="w-full bg-black">{category.card.card.title}</h1>
+            <h1 className="w-full bg-black text-light-cream">
+              {category.card.card.title}
+            </h1>
             <RestaurantCategory itemCards={category.card.card.itemCards} />
           </div>
         );
