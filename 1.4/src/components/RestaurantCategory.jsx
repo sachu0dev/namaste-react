@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { SlArrowDown } from "react-icons/sl";
 import ItemList from "./ItemList";
 
 const RestaurantCategory = ({ data }) => {
+  const [showItems, setShowItems] = useState(false);
   const handleClick = () => {
-    console.log("click");
+    setShowItems(!showItems);
   };
   return (
     <div className="m-4">
@@ -16,7 +18,7 @@ const RestaurantCategory = ({ data }) => {
         </span>
         <SlArrowDown />
       </div>
-      <ItemList items={data.itemCards} />
+      {showItems ? <ItemList items={data.itemCards} /> : null}
     </div>
   );
 };

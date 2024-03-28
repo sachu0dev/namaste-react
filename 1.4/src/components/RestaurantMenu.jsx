@@ -28,7 +28,7 @@ const RestaurantMenu = () => {
   return !restaurantInfo ? (
     <Shimmer />
   ) : (
-    <div className="menu-container mx-[25vw] my-8 text-dark-green bg-dark-gray rounded-3xl p-8">
+    <div className="menu-container mx-[25vw] my-8 text-dark-green bg-dark-gray rounded-3xl p-8 h-full">
       <div className="menu-left flex justify-between">
         <div>
           <h1 className="text-4xl font-extrabold">{restaurantInfo.name}</h1>
@@ -62,9 +62,10 @@ const RestaurantMenu = () => {
       </div>
       {categories.map((category) => {
         return (
-          <div>
-            <RestaurantCategory data={category?.card?.card} />
-          </div>
+          <RestaurantCategory
+            key={category.card.card.title}
+            data={category?.card?.card}
+          />
         );
       })}
     </div>
