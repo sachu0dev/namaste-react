@@ -15,6 +15,15 @@ const ItemList = ({ items }) => {
               <p className="text-md font-bold text-light-orange">
                 ₹ {item.card.info.price / 100}
               </p>
+              {item.card.info?.isVeg ? (
+                <p className="inline-block border border-3 border-light-green rounded-md px-1 font-bold text-xs mr-4 text-light-green">
+                  veg
+                </p>
+              ) : (
+                <p className="inline-block border border-3 border-light-orange rounded-md px-1 font-bold text-xs mr-4 text-light-orange">
+                  {item.card.info.itemAttribute.vegClassifier}
+                </p>
+              )}
               <p className="text-sm">{item.card.info.description}</p>
             </div>
             {item.card.info.imageId ? (

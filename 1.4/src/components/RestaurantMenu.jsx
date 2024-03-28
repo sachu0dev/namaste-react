@@ -4,9 +4,11 @@ import RestaurantCategory from "./RestaurantCategory";
 import Shimmer from "./Shimmer";
 import { FETCH_MENU_URL, IMG_CDN_URL } from "./constant";
 const RestaurantMenu = () => {
+  const dummy = "Dummy data";
   const { id } = useParams();
   const [restaurantInfo, setRestaurantInfo] = useState(null);
   const [categories, setCategories] = useState([]);
+  const [showIndex, setShowIndex] = useState(null);
 
   async function getRestaurantInfo() {
     const data = await fetch(FETCH_MENU_URL + id);
@@ -28,7 +30,7 @@ const RestaurantMenu = () => {
   return !restaurantInfo ? (
     <Shimmer />
   ) : (
-    <div className="menu-container mx-[25vw] my-8 text-dark-green bg-dark-gray rounded-3xl p-8 h-full">
+    <div className="menu-container mx-[25vw] my-8 text-dark-green bg-dark-gray rounded-3xl p-8 min-h-screen">
       <div className="menu-left flex justify-between">
         <div>
           <h1 className="text-4xl font-extrabold">{restaurantInfo.name}</h1>
@@ -57,14 +59,19 @@ const RestaurantMenu = () => {
       />
       <div className="menu-right">
         <p className="menu-header mt-8 text-4xl p-4 flex justify-center items-center">
-          menu <i class="fa-solid fa-bowl-food"></i>
+          <i className="fa-solid fa-bowl-food mr-2"></i> menu
         </p>
       </div>
-      {categories.map((category) => {
+      {categories.map((category, index) => {
+        console.log(category);
         return (
           <RestaurantCategory
             key={category.card.card.title}
             data={category?.card?.card}
+            showItems={index === showIndex ? true : false}
+            setShowIndex={() =>
+              setShowIndex(index === showIndex ? null : index)
+            }
           />
         );
       })}

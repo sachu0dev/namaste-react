@@ -52,7 +52,7 @@ export const Header = () => {
             </button>
           ) : (
             <button className="sign-btn" onClick={() => setIsLoggedIn(true)}>
-              <i class="fa-solid fa-user"></i> Login
+              <i className="fa-solid fa-user"></i> Login
             </button>
           )}
         </ul>
