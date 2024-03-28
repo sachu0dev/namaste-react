@@ -7,8 +7,6 @@ const RestaurantMenu = () => {
   const { id } = useParams();
   const [restaurantInfo, setRestaurantInfo] = useState(null);
   const [categories, setCategories] = useState([]);
-  console.log(categories);
-  console.log(restaurantInfo);
 
   async function getRestaurantInfo() {
     const data = await fetch(FETCH_MENU_URL + id);
@@ -25,13 +23,12 @@ const RestaurantMenu = () => {
   }
   useEffect(() => {
     getRestaurantInfo();
-    console.log("its running");
   }, []);
 
   return !restaurantInfo ? (
     <Shimmer />
   ) : (
-    <div className="menu-container mx-[30vw] my-8 text-dark-green bg-dark-gray rounded-3xl p-8">
+    <div className="menu-container mx-[25vw] my-8 text-dark-green bg-dark-gray rounded-3xl p-8">
       <div className="menu-left flex justify-between">
         <div>
           <h1 className="text-4xl font-extrabold">{restaurantInfo.name}</h1>
@@ -59,15 +56,14 @@ const RestaurantMenu = () => {
         src={IMG_CDN_URL + restaurantInfo.cloudinaryImageId}
       />
       <div className="menu-right">
-        <p className="menu-header mt-8 text-4xl p-4 ">
-          menu <i class="fa-solid fa-bowl-food"></i>category
+        <p className="menu-header mt-8 text-4xl p-4 flex justify-center items-center">
+          menu <i class="fa-solid fa-bowl-food"></i>
         </p>
       </div>
       {categories.map((category) => {
         return (
           <div>
-            <h1 className="w-full bg-black ">{category.card.card.title}</h1>
-            <RestaurantCategory itemCards={category.card.card.itemCards} />
+            <RestaurantCategory data={category?.card?.card} />
           </div>
         );
       })}
