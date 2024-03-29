@@ -1,6 +1,7 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useContext, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
+import UserContext from "./Utils/UserContext.js";
 import Body from "./components/Body.jsx";
 import Contact from "./components/Contact.jsx";
 import Error from "./components/Error.jsx";
@@ -14,12 +15,25 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 const Instamart = lazy(() => import("./components/Instamart.jsx"));
 const About = lazy(() => import("./components/About.jsx"));
 const AppLayout = () => {
+  const [userName, setUserName] = useState();
+
+  const data = useContext(UserContext);
+
+  useEffect(() => {
+    //  make an api call send username and password
+    const data = {
+      name: "Sushil Kumar",
+    };
+    setUserName(data.name);
+  }, []);
   return (
-    <>
-      <Header />
-      <Outlet />
-      <Footer />
-    </>
+    <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+      <>
+        <Header />
+        <Outlet />
+        <Footer />
+      </>
+    </UserContext.Provider>
   );
 };
 const appRouter = createBrowserRouter([

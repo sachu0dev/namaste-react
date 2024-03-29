@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import UserContext from "../Utils/UserContext";
 
 const loggedInUser = () => {
   return false;
@@ -15,6 +16,8 @@ export const Title = () => {
 
 export const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const { loggedInUser } = useContext(UserContext);
 
   return (
     <div className=" header flex bg-light-black text-light-cream justify-between items-center px-[10vw] py-4 shadow-md">
@@ -55,6 +58,7 @@ export const Header = () => {
               <i className="fa-solid fa-user"></i> Login
             </button>
           )}
+          <li>{loggedInUser}</li>
         </ul>
       </div>
     </div>

@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import UserContext from "../Utils/UserContext.js";
 import { filterData } from "../Utils/helper.js";
 import useOnline from "../Utils/useOnline.jsx";
 import useRestaurants from "../Utils/useRestarants.jsx";
@@ -8,6 +9,7 @@ import RestarunrantCard, { withOpenLabel } from "./restaurantCard.jsx";
 
 const Body = () => {
   const [searchTxt, setSearchTxt] = useState("");
+  const { loggedInUser, setUserName } = useContext(UserContext);
   const {
     allRestaurants,
     setAllRestaurants,
@@ -72,6 +74,11 @@ const Body = () => {
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
+        <input
+          className="border border-b-light-black p-2"
+          value={loggedInUser}
+          onChange={(e) => setUserName(e.target.value)}
+        />
       </div>
       <div className="restaurant-list grid px-[20vh] grid-cols-4 justify-center items-center flex-wrap">
         {filteredRestaurants.map((restarunrant) => (

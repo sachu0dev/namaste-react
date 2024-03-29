@@ -8,7 +8,7 @@ const RestaurantMenu = () => {
   const { id } = useParams();
   const [restaurantInfo, setRestaurantInfo] = useState(null);
   const [categories, setCategories] = useState([]);
-  const [showIndex, setShowIndex] = useState(null);
+  const [showIndex, setShowIndex] = useState(0);
 
   async function getRestaurantInfo() {
     const data = await fetch(FETCH_MENU_URL + id);
@@ -38,7 +38,7 @@ const RestaurantMenu = () => {
             {restaurantInfo.area}
           </h3>
           <h2 className="city text-xl font-bold text-light-black">
-            {restaurantInfo.city}
+            {restaurantInfo.cityndex === showIndex ? true : false}
           </h2>
           <h3 className="cuissines-name text-lg font-bold text-light-orange">
             {restaurantInfo.cuisines.join(", ")}

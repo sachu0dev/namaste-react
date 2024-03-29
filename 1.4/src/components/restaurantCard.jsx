@@ -1,8 +1,11 @@
+import { useContext } from "react";
+import UserContext from "../Utils/UserContext";
 import { IMG_CDN_URL } from "./constant";
 
 const RestarunrantCard = (restarunrant) => {
   const { name, cuisines, cloudinaryImageId, avgRating, locality, costForTwo } =
     restarunrant;
+  const { loggedInUser } = useContext(UserContext);
   const waitTime = restarunrant.sla.slaString;
   return (
     <div className="card w-[380px] h-[400px] rounded-[2rem] p-2 m-4 transition-all duration-100 ease-in overflow-hidden text-dark-green hover:p-6">

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import UserContext from "../Utils/UserContext";
 
 class About extends React.Component {
   constructor(props) {
@@ -8,16 +9,16 @@ class About extends React.Component {
       userInfo: "name",
       location: "location",
     };
-    console.log("constructor");
-  }
-  componentDidMount() {
-    console.log("componentDidMount");
   }
   render() {
-    console.log("render");
     return (
       <div>
         <h1>About us Page</h1>
+        <div>
+          <UserContext.Consumer>
+            {({ loggedInUser }) => <p className="text-xl">{loggedInUser}</p>}
+          </UserContext.Consumer>
+        </div>
         <p>
           {" "}
           This is the namaste react live Course Chapter - 07 - finding the path
