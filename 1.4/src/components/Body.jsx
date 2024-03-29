@@ -74,11 +74,11 @@ const Body = () => {
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
-        <input
+        {/* <input
           className="border border-b-light-black p-2"
           value={loggedInUser}
           onChange={(e) => setUserName(e.target.value)}
-        />
+        /> */}
       </div>
       <div className="restaurant-list grid px-[20vh] grid-cols-4 justify-center items-center flex-wrap">
         {filteredRestaurants.map((restarunrant) => (
