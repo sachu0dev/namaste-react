@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import UserContext from "../Utils/UserContext";
 
@@ -18,6 +19,9 @@ export const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const { loggedInUser } = useContext(UserContext);
+
+  // selector
+  const cart = useSelector((store) => store.cart.items);
 
   return (
     <div className=" header flex bg-light-black text-light-cream justify-between items-center px-[10vw] py-4 shadow-md">
@@ -46,7 +50,10 @@ export const Header = () => {
             </li>
           </Link>
 
-          <li>
+          <li className="relative">
+            <p className="absolute left-[-20px] top-[-5px] p-1 bg-dark-orange rounded-full">
+              {cart.length}
+            </p>
             <i className="fa-solid fa-cart-shopping"></i> Cart
           </li>
           {isLoggedIn ? (
