@@ -8,7 +8,7 @@ const RestarunrantCard = (restarunrant) => {
   const { loggedInUser } = useContext(UserContext);
   const waitTime = restarunrant.sla.slaString;
   return (
-    <div className="card w-[380px] h-[400px] rounded-[2rem] p-2 m-4 transition-all duration-100 ease-in overflow-hidden text-dark-green hover:p-6">
+    <div className="card w-[380px] h-[400px] rounded-[2rem] p-2 m-4 transition-all duration-100 ease-in overflow-hidden text-dark-green hover:p-6 ">
       <div className="img-container h-[200px] relative">
         <img
           className="h-[200px] w-full object-cover rounded-3xl"

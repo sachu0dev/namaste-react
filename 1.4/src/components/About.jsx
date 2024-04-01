@@ -12,7 +12,7 @@ class About extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="h-full">
         <h1>About us Page</h1>
         <div>
           <UserContext.Consumer>

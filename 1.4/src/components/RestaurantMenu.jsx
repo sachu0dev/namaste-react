@@ -63,7 +63,6 @@ const RestaurantMenu = () => {
         </p>
       </div>
       {categories.map((category, index) => {
-        console.log(category);
         return (
           <RestaurantCategory
             key={category.card.card.title}

@@ -1,6 +1,6 @@
 const Instamart = () => {
   return (
-    <div>
+    <div className="h-full">
       <h1>Instamart</h1>
       <h1>many components</h1>
     </div>

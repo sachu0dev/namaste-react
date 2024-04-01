@@ -1,4 +1,8 @@
 const Contact = () => {
-  return <h1>Contact Us</h1>;
+  return (
+    <div className="h-full">
+      <h1>Contact Us</h1>
+    </div>
+  );
 };
 export default Contact;

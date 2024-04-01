@@ -5,6 +5,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import appStore from "./Utils/Redux/appStore.js";
 import UserContext from "./Utils/UserContext.js";
 import Body from "./components/Body.jsx";
+import Cart from "./components/Cart.jsx";
 import Contact from "./components/Contact.jsx";
 import Error from "./components/Error.jsx";
 import Footer from "./components/Footer.jsx";
@@ -71,6 +72,10 @@ const appRouter = createBrowserRouter([
       {
         path: "restaurant/:id",
         element: <RestaurantMenu />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
       {
         path: "instamart",
