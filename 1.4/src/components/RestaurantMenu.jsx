@@ -4,7 +4,6 @@ import RestaurantCategory from "./RestaurantCategory";
 import Shimmer from "./Shimmer";
 import { FETCH_MENU_URL, IMG_CDN_URL } from "./constant";
 const RestaurantMenu = () => {
-  const dummy = "Dummy data";
   const { id } = useParams();
   const [restaurantInfo, setRestaurantInfo] = useState(null);
   const [categories, setCategories] = useState([]);
@@ -62,18 +61,14 @@ const RestaurantMenu = () => {
           <i className="fa-solid fa-bowl-food mr-2"></i> menu
         </p>
       </div>
-      {categories.map((category, index) => {
-        return (
-          <RestaurantCategory
-            key={category.card.card.title}
-            data={category?.card?.card}
-            showItems={index === showIndex ? true : false}
-            setShowIndex={() =>
-              setShowIndex(index === showIndex ? null : index)
-            }
-          />
-        );
-      })}
+      state.items.push(action.payload);
+      <RestaurantCategory
+        key={category.card.card.title}
+        data={category?.card?.card}
+        showItems={index === showIndex ? true : false}
+        setShowIndex={() => setShowIndex(index === showIndex ? null : index)}
+      />
+      ); })}
     </div>
   );
 };

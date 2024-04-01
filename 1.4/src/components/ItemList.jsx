@@ -12,14 +12,16 @@ const ItemList = ({ items }) => {
   return (
     <div>
       {items.map((item) => {
+        const { id, name } = item.food ? item.food.card.info : item.card.info;
         return (
           <div
-            key={item.card.info.id}
+            key={item.food?.card.info.id}
             className="p-2 m-2  border-dark-cream border-b-2 flex justify-between items-center "
           >
             <div className="w-[60%]">
               <span className="text-xl font-semibold">
-                {item.card.info.name}
+                {/* {item.card.info.name} */}
+                {name}
               </span>
               <p className="text-md font-bold text-light-orange">
                 ₹ {item.card.info.price / 100}
