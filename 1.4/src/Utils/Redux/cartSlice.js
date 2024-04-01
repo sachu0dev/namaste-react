@@ -8,7 +8,13 @@ const cartSlice = createSlice({
   },
   reducers: {
     addItem: (state, action )=> {
-     state.items.push(action.payload);
+      const existingItemIndex = state.items.findIndex(item => item.id === action.payload.card.info.id);
+      if (existingItemIndex !== -1) {
+        state.items[existingItemIndex].foodCount++;
+    } else {
+        state.items.push({...action.payload, foodCount: 1, id: action.payload.card.info.id});
+    }
+     
     },
     removeItem: (state, action)=>{
       state.items.pop();
