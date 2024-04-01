@@ -39,12 +39,7 @@ export const Header = () => {
             <li>About</li>
           </Link>
           <Link to="/cart">
-            <li className="relative">
-              <p className="absolute left-[-20px] top-[-5px] p-1 bg-dark-orange rounded-full">
-                {cart.length}
-              </p>
-              Cart
-            </li>
+            <li className="relative">Cart</li>
           </Link>
 
           {isLoggedIn ? (

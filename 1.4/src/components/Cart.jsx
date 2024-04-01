@@ -1,7 +1,9 @@
 import { GiHamburger } from "react-icons/gi";
 import { MdDelete } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { clearCart } from "../Utils/Redux/cartSlice";
+import CartPhoto from "../assets/images/add-to-cart.png";
 import ItemList from "./ItemList";
 
 const Cart = () => {
@@ -12,7 +14,31 @@ const Cart = () => {
   const handleClearCart = () => {
     dispatch(clearCart());
   };
-
+  if (cartItem.length === 0) {
+    return (
+      <div className="empty-cart-container flex flex-col items-center w-full h-full">
+        <img
+          src={CartPhoto}
+          alt=""
+          className="empty-cart-img mt-3 w-[25rem] h-[25rem]"
+          loading="lazy"
+        />
+        <span className="empty-cart-main-heading text-xl font-semibold mb-4">
+          Your cart is empty
+        </span>
+        <span className="empty-cart-sub-heading text-center mb-4">
+          Looks like you have not added anything to your cart. Go ahead &
+          explore items in menu.
+        </span>
+        <Link
+          to="/"
+          className="bg-light-orange text-light-gray px-3 py-2  rounded-lg"
+        >
+          Add item
+        </Link>
+      </div>
+    );
+  }
   return (
     <div className="flex flex-col items-center m-4 mx-[25vw] my-8 text-dark-green bg-dark-gray rounded-3xl p-8 min-h-screen">
       <div className="w-full flex justify-center p-4 mb-4  items-center relative">
@@ -28,6 +54,7 @@ const Cart = () => {
           </button>
         ) : null}
       </div>
+      <div className="bg-black h-4 w-full"></div>
       <div>
         {cartItem.length === 0 && (
           <h1 className="text-xl">Cart is empty, Go grab somthing to eat</h1>
