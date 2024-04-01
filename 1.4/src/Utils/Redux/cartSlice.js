@@ -14,10 +14,16 @@ const cartSlice = createSlice({
     } else {
         state.items.push({...action.payload, foodCount: 1, id: action.payload.card.info.id});
     }
-     
     },
     removeItem: (state, action)=>{
-      state.items.pop();
+      const getIndex = state.items.findIndex(item => item.id === action.payload);
+      if(getIndex !== -1){
+        if(state.items[getIndex].foodCount === 1){
+          state.items.splice(getIndex, 1);
+        } else{
+        state.items[getIndex].foodCount--;
+        }
+      }
     },
     clearCart: (state)=>{
       state.items.length = 0; 
