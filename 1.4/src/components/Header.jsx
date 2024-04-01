@@ -24,10 +24,10 @@ export const Header = () => {
   console.log(cart);
 
   return (
-    <div className=" header flex bg-light-black text-light-cream justify-between items-center px-[10vw] py-4 shadow-light-green shadow-sm rounded-full m-2">
+    <div className=" header flex bg-light-black text-light-cream justify-between items-center px-[10vw] py-4 shadow-light-green shadow-sm ">
       <Title />
       <div className="nav-items">
-        <ul className="flex gap-8  text-md">
+        <ul className="flex gap-12  text-md">
           <Link to="/">
             <li>Restaurants</li>
           </Link>
