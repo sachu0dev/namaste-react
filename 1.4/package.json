@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "this is a test description",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "start": "rm -rf .parcel-cache && parcel index.html",
+    "build": "rm -rf .parcel-cache && parcel build index.html",
     "test": "jest"
   },
   "keywords": [

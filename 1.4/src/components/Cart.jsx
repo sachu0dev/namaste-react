@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { clearCart } from "../Utils/Redux/cartSlice";
 import CartPhoto from "../assets/images/add-to-cart.png";
+import BillDisplay from "./BillDispay";
 import ItemList from "./ItemList";
 
 const Cart = () => {
@@ -54,11 +55,11 @@ const Cart = () => {
           </button>
         ) : null}
       </div>
-      <div className="bg-black h-4 w-full"></div>
       <div>
         {cartItem.length === 0 && (
           <h1 className="text-xl">Cart is empty, Go grab somthing to eat</h1>
         )}
+        <BillDisplay items={cartItem} />
         <ItemList items={cartItem} />
       </div>
     </div>
