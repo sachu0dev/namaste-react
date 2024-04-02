@@ -14,22 +14,23 @@ const BillDisplay = ({ items }) => {
   return (
     <div className="w-full flex flex-col bg-dark-green p-4 rounded-lg">
       <div className="flex justify-center items-center text-xl font-bold text-light-gray">Bill Details</div>
-      <div>
+      <div >
         <ul className=" my-4 p-2 border-y-2 border-light-gray ">
           {items.map((item) => {
             return (
               <li className="text-light-gray flex justify-between items-center font-medium p-1" >
-                <h1>{item.card.info.name}</h1>
+                <h1>{item.card.info.name}({item.foodCount})</h1>
                 <h1>₹{(item.foodCount * item.card.info.price) / 100}</h1>
 
               </li>
             )
           })}
         </ul>
-        <div className="flex justify-between my-2 p-2">
+        <div className="flex justify-between my-2 py-4 p-2 border-b-2 border-light-gray">
           <h1 className="text-light-gray text-xl font-bold">Total</h1>
           <h1 className="text-light-gray text-xl font-bold">₹{total}</h1>
         </div>
+        <button className="bg-light-cream p-2 rounded-lg text-dark-black my-4 ">Check Out</button>
       </div>
     </div>
   )
