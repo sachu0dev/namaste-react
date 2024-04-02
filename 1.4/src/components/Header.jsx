@@ -21,7 +21,6 @@ export const Header = () => {
 
   // selector
   const cart = useSelector((store) => store.cart.items);
-  console.log(cart);
 
   return (
     <div className=" header flex bg-light-black text-light-cream justify-between items-center px-[10vw] py-4 shadow-light-green shadow-sm ">

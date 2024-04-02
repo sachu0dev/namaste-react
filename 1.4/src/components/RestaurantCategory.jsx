@@ -2,9 +2,7 @@ import { SlArrowDown } from "react-icons/sl";
 import ItemList from "./ItemList";
 
 const RestaurantCategory = ({ data, showItems, setShowIndex }) => {
-  {
-    console.log(data.itemCards);
-  }
+
   const handleCLick = () => {
     setShowIndex();
   };
